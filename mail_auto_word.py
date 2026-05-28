@@ -46,9 +46,8 @@ except ImportError:
     MISSING.append("openpyxl")
 
 if MISSING:
-    print(f"缂哄皯渚濊禆锛歿', '.join(MISSING)}")
-    print(f"璇疯繍琛岋細pip install {' '.join(MISSING)}")
-    print("鎴栵細pip install python-docx openpyxl")
+    print("Missing deps: " + ", ".join(MISSING))
+    print("Run: pip install " + " ".join(MISSING))
     sys.exit(1)
 
 # ============================================================
